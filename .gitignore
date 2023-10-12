@@ -1,0 +1,48 @@
+# --- Gradle
+.gradle/
+build/
+
+# ---- Orchestrator
+its/ruling/target/
+its/plugin/target/
+its/plugin/projects/tests-surefire-suffix/target/
+its/plugin/projects/tests-with-submodule/submodule/target/
+its/plugin/projects/tests-with-submodule/target/
+its/plugin/projects/tests-without-main-code/target/
+
+# ---- SonarQube analysis
+.scannerwork/
+.sonar/
+
+# ---- IntelliJ IDEA
+*.iws
+*.iml
+*.ipr
+.idea/
+out/
+bin/
+
+# ---- Eclipse
+.classpath
+.project
+.settings
+
+# ---- Mac OS X
+.DS_Store
+Icon?
+# Thumbnails
+._*
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# ---- Windows
+# Windows image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
+
+.java-version
+
+# Files with long name to be ignored to prevent git commits
+sonar-kotlin-plugin/src/test/resources/org/sonarsource/kotlin/plugin/surefire/KotlinSurefireSensorTest/many-results/TEST-ch.hortis.sonar.mvn.mc.CheckstyleCollectorTest.xml
