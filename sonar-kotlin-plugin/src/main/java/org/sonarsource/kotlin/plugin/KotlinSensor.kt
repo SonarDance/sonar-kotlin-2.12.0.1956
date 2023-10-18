@@ -250,11 +250,11 @@ class KotlinSensor(
             )
         } else {
             listOf(
-                IssueSuppressionVisitor(),
-                MetricVisitor(fileLinesContextFactory, noSonarFilter),
+//                IssueSuppressionVisitor(),
+//                MetricVisitor(fileLinesContextFactory, noSonarFilter),
                 KtChecksVisitor(checks),
-                CopyPasteDetector(),
-                SyntaxHighlighter(),
+//                CopyPasteDetector(),
+//                SyntaxHighlighter(),
             )
         }
 

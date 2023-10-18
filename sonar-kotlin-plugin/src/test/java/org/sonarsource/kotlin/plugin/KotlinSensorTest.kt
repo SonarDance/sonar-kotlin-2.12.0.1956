@@ -222,7 +222,7 @@ internal class KotlinSensorTest : AbstractSensorTest() {
         sensor(checkFactory).execute(context)
         val analysisErrors = context.allAnalysisErrors()
         Assertions.assertThat(analysisErrors).hasSize(1)
-        val analysisError = analysisErrors.iterator().next()
+            val analysisError = analysisErrors.iterator().next()
         Assertions.assertThat(analysisError.inputFile()).isEqualTo(inputFile)
         Assertions.assertThat(analysisError.message()).isEqualTo("Unable to parse file: file1.kt")
         val textPointer = analysisError.location()
